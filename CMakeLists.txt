@@ -48,6 +48,9 @@ target_link_libraries(benchmark_virtual ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 add_executable(benchmark_realworld src/benchmark/benchmark_realworld.cpp)
 target_link_libraries(benchmark_realworld ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
+add_executable(benchmark_lidar src/benchmark/benchmark_lidar.cpp)
+target_link_libraries(benchmark_lidar ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+
 add_executable(PA_test src/compare_test/PA_test.cpp)
 target_link_libraries(PA_test ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${CERES_LIBRARIES})
 
